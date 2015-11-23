@@ -1,0 +1,246 @@
+//*$color1:  #087b00; /* Nomadbase : Menu */
+//*$color2:  #3d0101; /* Lisbon */
+//*$color3:  #64bf00; /* a hover */
+//*$color4:  #fb7c70; /* a active */
+//*$mountains1: url(../images/mountains1_small.png);
+//$mountains2: url(../images/mountains_small.png);
+
+$color1:  #698782; 
+//* Nomadbase : Menu 
+$color2:  #4293cc; 
+//* Lisbon 
+$color3:  #6aa867; 
+// a hover 
+$color4:  #93d26a; 
+//* a active 
+$mountains1: url(../images/mountains1_small_blue.png);
+$mountains2: url(../images/mountains_small_blue.png);
+
+
+html{
+  background: url(../images/bg.png);
+  position:relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0 0 1em 0;
+  font-family: "source-sans-pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0 0 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a {
+  border-bottom: 2px dotted black;
+  text-decoration: none;
+}
+
+a:visited{
+  color:black;
+}
+
+#menu a{
+  border-bottom: none;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 70px;
+  font-family: Chunkfive;
+
+
+}
+
+#logo a{
+  border-bottom: none;
+}
+
+#Nomadbase {
+  
+  color: $color1;
+
+}
+
+#Lisbon {
+  color: $color2;
+}
+
+#menu {
+  position: relative;
+
+  margin-left: 40px;
+}
+
+#menu span{
+  margin-right: 15px;
+  font-family: Chunkfive;
+  font-size: 20px;
+
+}
+
+#menu a {
+  color: $color1;
+}
+
+#menu a:hover {
+  color: $color3;
+}
+
+#menu a:active {
+  color: $color4;
+}
+
+.menu_inactive{
+  color:#c2c4c2;
+}
+
+.menu_active{
+  color: $color4;
+}
+
+#container{
+  position: relative;
+  margin-top: 50px;
+  height:100%;
+}
+
+#content{
+  width:40%;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+#mountains{
+  position: absolute;
+  margin:0;
+  padding: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+}
+
+#mountains1{
+  left: 0px;
+  background-image: $mountains1;
+  float: left;
+  height: 100px;
+  width: 59px;
+  margin:0;
+  padding: 0;
+}
+
+#mountains2{
+  background-image: $mountains2;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100px;
+  margin-left: 59px;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Chunkfive";
+  src: url("../font/Chunkfive.otf");
+  }
+
+@font-face{
+  font-family: "Blokletters-Viltstift";
+  src: url("../font/Blokletters-Viltstift.ttf");
+}
+
+@font-face {
+  font-family: "Blokletters-Balpen";
+  src: url("../font/Blokletters-Balpen.ttf");
+  }
+
+/*to raczej niepotrxzebne*/
+.lighttext_intro{
+  font-family:  "Blokletters-Balpen";
+}
+
+.boldtext_intro{
+  font-family:  "Blokletters-Viltstift";
+}
+
+#content_intro{
+  text-align: center;
+}
+
+#status_intro{
+  position: relative;
+  font-family:  "Blokletters-Balpen";
+  float:right;
+  font-size: 14px;
+  margin-right: 60px;
+  background-image: url(../images/cloud.png);
+  background-repeat: no-repeat;
+  width: 237px;
+  height: 192px;
+}
+#status_intro div{
+  width:80%;
+  margin-left: 30px;
+  margin-top: 8px;
+}
+
+#come_intro{
+  position: relative;
+  font-family: "Blokletters-Balpen";
+  display: inline-block;
+width: 100%;
+margin-top: 30px;
+}
+
+  #Nomadbase_intro{
+    position: relative;
+    font-family: Chunkfive;
+    color: $color1;
+    font-size: 100px;
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  #Lisbon_intro{
+    position: relative;
+    font-family: Chunkfive;
+    color: $color2;
+    font-size: 80px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .active_intro{
+    float: left;
+  }
+  .waiting_intro{
+    float: left;
+    color: #c2c4c2
+
+  }
+
+  .more_intro{
+    font-size: 12px;
+    color:red;
+    float: right;
+  }
+
+  #date_intro{
+    position: relative;
+  font-family: "Blokletters-Balpen";
+  display: inline-block;
+width: 100%;
+color: #c2c4c2
+  }
+
